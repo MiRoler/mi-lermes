@@ -1,0 +1,327 @@
+
+* {
+    margin:0;padding:0;box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../_imagens/terra.png);
+    background-size: cover;
+    background-position: center center;
+
+    width: 100%;
+    height: 98vh;
+
+    border-top:5px solid rgb(51, 51, 71);
+
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+}
+
+nav {
+    width:95%;
+    height: 150px;
+    position: fixed;
+    top:0;left:2.5%;
+    z-index: 9999;
+}
+
+.navEstatico {
+    width:100%;
+    height: 55px;
+    background-color:rgba(247,247,247,0.98);
+    left:0;
+    box-shadow: 0 1px 10px #333;
+    transition-duration: 0.8s;
+}
+
+nav div {
+    float:left;
+    background-image: url(../_imagens/terralogo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.logoEstatico {
+    height: 55px;
+    margin-left:50px;
+    width: 75px;
+    transition-duration: 0.8s;
+}
+
+.logoEstatico:hover {
+    align-items: center;
+    background-color: #FFBE0F;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+
+    margin-top:70px;
+}
+
+.menuEstatico {
+    margin-top:15px;
+}
+
+nav ul#esquerda {
+    float:left;
+}
+
+nav ul#direita {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration:none;
+    padding:10px 30px;
+    border-radius: 100px;
+
+    font-size:80%;
+}
+
+.itensEstatico {
+    color:#404040;
+    padding:19px 30px;
+    border-radius: 0;
+}
+
+nav ul li a:hover {
+    background-color: #F2B705;
+    transition-duration: 1s;
+}
+
+nav ion-icon {
+    width: 45px;
+    height: 45px;
+
+    color:white;
+    margin-top:-10px;
+    margin-left:20px;
+}
+
+.iconeEstatico {
+    color:#404040;
+    margin-right: 25px;
+}
+
+nav ion-icon:hover {
+    color:#F2B705;
+    cursor: pointer;
+}
+
+header div#chamada {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+
+    top:50%;
+    left:50%;
+
+    transform: translate(-50%,-50%);
+}
+
+section {
+    padding: 55px 0 80px;
+}
+
+/* ---------------------------- */
+/*   SEÇAO - OBJETIVO   */
+/* ---------------------------- */
+
+#objetivo {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#objetivo-esquerda {
+    position: relative;
+    width: 15%;
+}
+
+#objetivo-direita {
+    position: relative;
+    width: 15%; 
+}
+
+#objetivo-centro {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#objetivo-centro h2:after {
+    display: block;
+    background-color: #385170;
+    height: 3px;
+    width: 15%;
+    margin: 20px auto 10px;
+    content: " ";
+}
+
+#pontos-chaves-mestre {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.pontos-chaves {
+    text-align: center;
+    width: 30%;
+}
+
+.pontos-chaves h5 {
+    color: #404040;
+}
+
+.pontos-chaves h5:after {
+    display: block;
+    background-color: #385170;
+    height: 5px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content: " ";
+}
+
+.pontos-chaves ion-icon {
+    width: 50px;
+    height: 50px;
+    color: #385170;
+}
+
+/* ---------------------------- */
+/*     SEÇAO - EXPERIENCIA      */
+/* ---------------------------- */
+
+section#experiencia {
+    background-color: #3C415C;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%)
+
+}
+
+/* ---------------------------- */
+/*      SEÇAO - SOBRE MIM    */
+/* ---------------------------- */
+
+section#sobre {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#sobre-mestre {
+    width:100%;
+    height: 300px;
+    
+    margin-top: 90px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+div#sobre-esquerda, div#sobre-direita {
+    width: 15%;
+    height: 300px;
+    cursor: pointer;
+}
+
+div#sobre-mestre ion-icon {
+    width: 90%;
+    height: 90%;
+    color: #385170;;
+}
+
+div#sobre-esquerda ion-icon {
+    opacity: 0.5;
+}
+
+div#sobre-centro {
+    width: 70%;
+    margin: 0 auto;
+    height: 300px;
+    position: relative;
+
+    max-width: 1010px;
+    overflow: hidden;
+}
+
+div#about {
+    position: absolute;
+    left:0;
+    width:2680px;
+}
+
+section#sobre div#sobre-centro div#about ul {
+    display: inline-table;
+    width: 300px;
+    background: #fff;
+    padding:30px;
+    margin:50px 15px;
+
+    text-align: center;
+}
+
+section#sobre div#sobre-centro div#about ul li {
+    list-style:none;
+    display: inline-table;
+    width: 90%;
+    margin:0;
+}
+
+section#sobre div#sobre-centro div#about ul img {
+    width:100%;
+    margin-top:-80px;
+    margin-bottom:20px;
+    border:3px solid #8a91b4;
+}
+
+/* ---------------------------- */
+/*           FOOTER             */
+/* ---------------------------- */
+
+
+footer {
+    margin-top: 5px;
+    background-color: #1a1919;
+    width: 100%;
+    height: 70px;
+}
+
+.copyright {
+    text-align: center;
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 30px 0;
+  
+}

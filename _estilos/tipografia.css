@@ -1,0 +1,133 @@
+* {
+    font-size: 16px;
+}
+
+h1 {
+    margin-top: 70px;
+    font-family: 'Shrikhand', cursive;
+    color: #FFBE0F;
+    text-align: center;
+    font-size: 400%;
+    font-weight: 200; 
+
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1f334d;
+    text-align: center;
+    font-size: 150%;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFBE0F;
+    text-align: center;
+    font-size: 200%;
+}
+
+#sobre h3 {
+    font-size: 150%;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 150%;
+
+    animation-name: HeaderH4-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+h5 {
+    font-family: 'Shrikhand', cursive;  
+    font-size: 150%;
+    font-weight: 150;
+    padding: 20px 0;  
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #7c7777;
+}
+
+li, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+p.destaque {
+    font-size: 110%;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: center;
+    width: 42%;
+    color: #7c7777;
+}
+
+p.introducao {
+    text-align: center;
+    font-size: 110%;
+    line-height: 1.8;
+    font-weight: 300;
+    width: 40%;
+    color: whitesmoke;
+}
+
+p.introducao-habilidades {
+    text-align: center;
+    font-size: 110%;
+    line-height: 1.8;
+    font-weight: 300;
+    width: 40%;
+    color: whitesmoke;
+}
+
+p.destaquedois {
+    margin-top: 15px;
+    font-size: 100%;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: center;
+    width: 40%;
+    color: #7c7777;
+}
+
+p.sugestao {
+    color: #385170
+}
+
+h3:after {
+    display: block;
+    background-color: #385170;
+    height: 5px;
+    width: 20%;
+    margin: 20px auto 10px;
+    content: " ";
+}
+
+ion-icon {
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+#linkedin {
+    color: #0e76a8;
+}
+
+#linkedin:hover {
+    color: rgb(147, 216, 236);
+}
+
